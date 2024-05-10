@@ -1,8 +1,6 @@
 package org.fscareer.models;
 
 import java.math.BigDecimal;
-import java.sql.Time;
-import java.time.LocalTime;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -33,12 +31,12 @@ public class Aircraft {
     private BigDecimal salePrice;
     private BigDecimal rentalDry;
     private BigDecimal rentalWet;
-    private LocalTime  rentalTime;
+    private Long  rentalTime;
     private Double fuelPct;
     private boolean needsRepair;
-    private LocalTime airFrameTime;
-    private LocalTime engineTime;
-    private LocalTime timeLast100Hr;
+    private Long airFrameTime;
+    private Long engineTime;
+    private Long timeLast100Hr;
     private BigDecimal monthlyFee;
     private BigDecimal feeOwed;   
 }
