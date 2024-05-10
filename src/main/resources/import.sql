@@ -1,6 +1,11 @@
--- This file allow to write SQL commands that will be emitted in test and dev.
--- The commands are commented as their support depends of the database
--- insert into myentity (id, field) values(1, 'field-1');
--- insert into myentity (id, field) values(2, 'field-2');
--- insert into myentity (id, field) values(3, 'field-3');
--- alter sequence myentity_seq restart with 4;
+INSERT INTO aircraft (makeModel, registration, owner, locationICAO, locationName, homeIcao, salePrice, rentalDry, rentalWet, rentalTime, fuelPct, needsRepair, airFrameTime, engineTime, timeLast100Hr, monthlyFee, feeOwed) 
+VALUES 
+('Cessna 172 Skyhawk', 'N12345', 'John Doe', 'KLAX', 'Los Angeles International Airport', 'KLAX', 125000.00, 100.00, 150.00, INTERVAL '200 hour', 0.75, false, INTERVAL '100 hour', INTERVAL '200 hour', INTERVAL '50 hour', 500.00, 0.00),
+('Piper PA-28 Cherokee', 'N54321', 'Jane Smith', 'KSFO', 'San Francisco International Airport', 'KSFO', 95000.00, 90.00, 140.00, INTERVAL '400 hour', 0.70, true, INTERVAL '150 hour', INTERVAL '220 hour', INTERVAL '60 hour', 450.00, 200.00),
+('Beechcraft Bonanza', 'N98765', 'Michael Johnson', 'KJFK', 'John F. Kennedy International Airport', 'KJFK', 210000.00, 150.00, 200.00, INTERVAL '250 hour', 0.80, false, INTERVAL '200 hour', INTERVAL '180 hour', INTERVAL '40 hour', 700.00, 0.00),
+('Cirrus SR22', 'N24680', 'Emily Brown', 'KDEN', 'Denver International Airport', 'KDEN', 280000.00, 200.00, 250.00, INTERVAL '70 hour', 0.85, true, INTERVAL '180 hour', INTERVAL '240 hour', INTERVAL '70 hour', 750.00, 150.00),
+('Diamond DA40', 'N13579', 'Christopher Lee', 'KDFW', 'Dallas/Fort Worth International Airport', 'KDFW', 180000.00, 120.00, 180.00, INTERVAL '15 hour', 0.75, false, INTERVAL '170 hour', INTERVAL '210 hour', INTERVAL '55 hour', 600.00, 0.00),
+('Mooney M20', 'N11223', 'Samantha Taylor', 'KATL', 'Hartsfield-Jackson Atlanta International Airport', 'KATL', 135000.00, 110.00, 160.00, INTERVAL '400 hour', 0.70, true, INTERVAL '160 hour', INTERVAL '230 hour', INTERVAL '65 hour', 550.00, 100.00),
+('Embraer Phenom 100', 'N76543', 'David Wilson', 'KMIA', 'Miami International Airport', 'KMIA', 850000.00, 500.00, 600.00, INTERVAL '600 hour', 0.90, false, INTERVAL '300 hour', INTERVAL '400 hour', INTERVAL '90 hour', 1500.00, 0.00),
+('Gulfstream G650', 'N54321', 'Sarah Miller', 'KIAH', 'George Bush Intercontinental Airport', 'KIAH', 2500000.00, 1500.00, 1800.00, INTERVAL '1700 hour', 0.95, false, INTERVAL '500 hour', INTERVAL '600 hour', INTERVAL '150 hour', 5000.00, 0.00),
+('Airbus A320', 'N24680', 'Emma White', 'KSAN', 'San Diego International Airport', 'KSAN', 15000000.00, 8000.00, 10000.00, INTERVAL '300 hour', 0.99, false, INTERVAL '1000 hour', INTERVAL '1100 hour', INTERVAL '250 hour', 20000.00, 0.00);
